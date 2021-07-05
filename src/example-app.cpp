@@ -37,7 +37,7 @@ torch::Tensor reduction (
   return torch::Tensor::mean(c);
  }
 
- ''' //std::vector<Ort::Value> inputTensors;
+ ///std::vector<Ort::Value> inputTensors;
     //std::vector<Ort::Value> outputTensors;
    // Ort::MemoryInfo memoryInfo = Ort::MemoryInfo::CreateCpu(
        // OrtAllocatorType::OrtArenaAllocator, OrtMemType::OrtMemTypeDefault);
