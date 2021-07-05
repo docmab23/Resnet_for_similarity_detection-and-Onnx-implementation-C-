@@ -37,16 +37,16 @@ torch::Tensor reduction (
   return torch::Tensor::mean(c);
  }
 
-  std::vector<Ort::Value> inputTensors;
-    std::vector<Ort::Value> outputTensors;
-    Ort::MemoryInfo memoryInfo = Ort::MemoryInfo::CreateCpu(
-        OrtAllocatorType::OrtArenaAllocator, OrtMemType::OrtMemTypeDefault);
-    inputTensors.push_back(Ort::Value::CreateTensor<float>(
-        memoryInfo, inputTensorValues.data(), inputTensorSize, inputDims.data(),
-        inputDims.size()));
-    outputTensors.push_back(Ort::Value::CreateTensor<float>(
-        memoryInfo, outputTensorValues.data(), outputTensorSize,
-        outputDims.data(), outputDims.size()));
+ ''' //std::vector<Ort::Value> inputTensors;
+    //std::vector<Ort::Value> outputTensors;
+   // Ort::MemoryInfo memoryInfo = Ort::MemoryInfo::CreateCpu(
+       // OrtAllocatorType::OrtArenaAllocator, OrtMemType::OrtMemTypeDefault);
+    //inputTensors.push_back(Ort::Value::CreateTensor<float>(
+      ///  memoryInfo, inputTensorValues.data(), inputTensorSize, inputDims.data(),
+       // inputDims.size()));
+    ///outputTensors.push_back(Ort::Value::CreateTensor<float>(
+       // memoryInfo, outputTensorValues.data(), outputTensorSize,
+       // outputDims.data(), outputDims.size()));
  
 
 
