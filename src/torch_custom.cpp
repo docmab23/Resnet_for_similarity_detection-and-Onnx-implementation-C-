@@ -1,4 +1,4 @@
-+#include <torch/torch.h>
+#include <torch/torch.h>
 #include <iostream>
 #include <list>
 #include "onnxruntime_cxx_api.h"
